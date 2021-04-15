@@ -21,6 +21,10 @@ class TodoForm extends React.Component{
         return new Date().getTime();
     }
     logSubmit(event){
+        if (this.state.title === "" || this.state.body === ""){
+            alert("please dont leave the field blank");
+            return 0;
+        }
         event.preventDefault();
         const todo = Object.assign({}, this.state, {id: this.uniqueId() });
         this.props.receiveTodo(todo);
