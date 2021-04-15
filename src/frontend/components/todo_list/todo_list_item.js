@@ -24,7 +24,7 @@ class TodoListItem extends React.Component{
   
         return(
             <li>
-                {todo.title}
+                {todo.title} - {todo.body} -
                 <button onClick={this.remove}>x</button>
                 <button onClick={this.toggle}>{this.state.status}</button>
             </li>

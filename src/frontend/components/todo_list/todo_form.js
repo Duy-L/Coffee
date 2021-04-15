@@ -8,11 +8,11 @@ class TodoForm extends React.Component{
             body: "",
             done: false
         };
-        const {receiveTodo} = this.props;
+
         this.uniqueId = this.uniqueId.bind(this);
         this.logSubmit = this.logSubmit.bind(this);
-    }
 
+    }
     update(property) {
         return e => this.setState({[property]: e.target.value});
     }
@@ -22,9 +22,9 @@ class TodoForm extends React.Component{
     }
     logSubmit(event){
         event.preventDefault();
-        let id = this.uniqueId;
-        const todo = Object.assign({}, this.state, {id: id});
+        const todo = Object.assign({}, this.state, {id: this.uniqueId() });
         this.props.receiveTodo(todo);
+        localStorage.setItem('todo', JSON.stringify(todo));
         this.setState({
             title: "",
             body: ""

@@ -19,12 +19,13 @@ const initialState = {
   };
   
 
-const todosReducer = (oldState = initialState, action) => {
+const todosReducer = (oldState = {}, action) => {
     Object.freeze(oldState); //nothing can be add or remove
     let nextState = {};
+    
     switch(action.type){
         case RECEIVE_TODOS:
-            action.todos.map(todo => {
+            action.todos.forEach(todo => {
                  nextState[todo.id] = todo;
             });
             return nextState;
