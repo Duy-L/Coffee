@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import * as $ from 'jquery';
-import Player from './player.js'
-import "./assets/spotify.css"
+import Player from './player.js';
+import "./assets/spotify.css";
+import hash from './hash.js';
 
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 const clientId = "fc9c4a1983ab48d0a9a16679b3f55f53";
@@ -11,20 +12,6 @@ const scopes = [
     "user-read-currently-playing",
     "user-read-playback-state"
 ];
-
-//get hash of the url
-const hash = window.location.hash
-    .substring(1)
-    .split("&")
-    .reduce(function(initial, item){
-        if (item){
-            var parts = item.split("=");
-            initial[parts[0]] = decodeURIComponent(parts[1]);
-        }
-        return initial;
-    }, {});
-
-window.location.hash = "";
 
 class Spotify extends Component {
     constructor(){
@@ -37,7 +24,7 @@ class Spotify extends Component {
             },
             name: "",
             artists: [{ name: "" }],
-            duration_ms: 0,
+            duration_ms: 0
         },
         is_playing: "Paused",
         progress_ms: 0,
@@ -111,7 +98,7 @@ class Spotify extends Component {
                         <Player
                             item={this.state.item}
                             is_playing={this.state.is_playing}
-                            progress_ms={this.progress_ms}
+                            progress_ms={this.state.progress_ms}
                         />
                     )}
                     {this.state.no_data && (

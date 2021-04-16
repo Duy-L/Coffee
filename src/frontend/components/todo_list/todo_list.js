@@ -6,7 +6,7 @@ class TodoList extends React.Component {
         const {todos, receiveTodo, removeTodo} = this.props;
         return(
             <div>
-                <h3>List of Todos:</h3> 
+                <h3>Notes:</h3> 
                 <ul>
                     {todos.map(todo => <TodoListItem todo={todo} removeTodo={removeTodo}/>)}
                 </ul>

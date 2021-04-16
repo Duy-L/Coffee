@@ -1,10 +1,11 @@
 .Spotify {
   text-align: center;
+  width: 60%;
 }
 
 .Spotify-header {
-  background-color: #282c34;
-  min-height: 20vh;
+  background-color: #222;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +16,7 @@
 
 .Spotify-link {
   color: #61dafb;
+
 }
 
 .hidden {
@@ -26,13 +28,14 @@
 .btn {
   background-color: transparent;
   border-radius: 2em;
-  border: 0.2em solid #1ecd97;
+  border: 0.1em  #1ecd97;
   color: #1ecd97;
   cursor: pointer;
   font-size: 3vmin;
   padding: 0.7em 1.5em;
   text-transform: uppercase;
   transition: all 0.25s ease;
+  text-decoration: none;
 }
 
 .btn:hover {

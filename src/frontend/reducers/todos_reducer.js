@@ -3,20 +3,20 @@ import {RECEIVE_TODOS, RECEIVE_TODO, REMOVE_TODO} from '../action/actions.js';
 // const _defaultState = {
 //     todo: []
 // }
-const initialState = {
-    1: {
-      id: 1,
-      title: "wash car",
-      body: "with soap",
-      done: false
-    },
-    2: {
-      id: 2,
-      title: "wash dog",
-      body: "with shampoo",
-      done: true
-    }
-  };
+// const initialState = {
+//     1: {
+//       id: 1,
+//       title: "wash car",
+//       body: "with soap",
+//       done: false
+//     },
+//     2: {
+//       id: 2,
+//       title: "wash dog",
+//       body: "with shampoo",
+//       done: true
+//     }
+//   };
   
 
 const todosReducer = (oldState = {}, action) => {
