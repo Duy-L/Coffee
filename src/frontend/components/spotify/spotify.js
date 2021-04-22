@@ -25,14 +25,16 @@ class Spotify extends Component {
             name: "",
             artists: [{ name: "" }],
             duration_ms: 0
-        },
-        is_playing: "Paused",
-        progress_ms: 0,
-        no_data: false,
+            },
+            is_playing: "Paused",
+            progress_ms: 0,
+            no_data: false,
+            show: false,
         };
 
         this.getCurrentlyPlaying = this.getCurrentlyPlaying.bind(this);
         this.tick = this.tick.bind(this);
+        this.display= this.display.bind(this);
     }
 
     getCurrentlyPlaying(token) {
@@ -82,10 +84,25 @@ class Spotify extends Component {
             this.getCurrentlyPlaying(this.state.token);
         }
     }
-    
+
+    display(){
+        console.log("what is going on");
+        if(!this.state.show){
+            this.setState({show: true});
+        }else{
+            this.setState({show: false});
+        }
+    }
     render (){
         return (
-            <div className="Spotify">
+        <div>
+            <button
+                id="button"
+                onClick={this.display}
+            >+S
+            </button>
+            {this.state.show && (
+                <div className="Spotify">
                 <header className="Spotify-header">
                     {!this.state.token && (
                         <a
@@ -107,7 +124,8 @@ class Spotify extends Component {
                         </p>
                     )}
                 </header>
-            </div>
+                </div>)}      
+        </div>
         );
     }
 }

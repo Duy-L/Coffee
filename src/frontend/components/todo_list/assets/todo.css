@@ -1,0 +1,66 @@
+.box {
+    position: absolute;
+    text-align: center;
+    cursor: move;
+    color: black;
+    background-color: white;
+    max-width: 215px;
+    overflow-wrap: break-word;
+    border-radius: 5px;
+    padding: 1em;
+    margin: auto;
+    user-select: none;
+}
+/* .new-text {
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* #enter {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:black;
+    text-align:center;
+    transition-duration: 0.4s;
+}
+
+#enter:hover{
+    color:white;
+    background-color:green;
+} */
+
+#button {
+    display:inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+    border: none;
+    background: none;
+
+}
+#button:focus{
+    outline: none;
+}
+#delete {
+    font-size: 0.6em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    outline:none;
+}
+
+#delete:hover {
+    color: rgb(255, 55, 55);
+    outline:none;
+}

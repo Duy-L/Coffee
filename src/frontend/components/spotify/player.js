@@ -15,9 +15,8 @@ const Player = props => {
     <div className="App">
         <div className="main-wrapper">
             <div className="now-playing__img">
-                <div id= "wrapper">
-                    <img id="blurred" src={props.item.album.images[0].url} />
-                    <img id="cover" src={props.item.album.images[0].url} />
+                <div>
+                    <img src={props.item.album.images[0].url}/>
                 </div>
             </div>
             <div className="now-playing__side">

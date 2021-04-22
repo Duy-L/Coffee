@@ -15,6 +15,7 @@ const App = () => (
     <div>
         <h1>Work in Progress...</h1>
         <TodoListContainer/>
+        <br/>
         <Spotify/>
         <SpotifyPlaylist/>
         <h1>From audio</h1>

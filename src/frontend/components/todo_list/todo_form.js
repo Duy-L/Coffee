@@ -1,53 +1,72 @@
 import React from 'react';
+import {v4 as uuidv4 } from "uuid";
+import "./assets/todo.css";
+var randomColor = require('randomcolor');
 
 class TodoForm extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            title: "",
             body: "",
-            done: false
+            show: false,
+            color: randomColor({luminosity:"light",}),
+            defaultPos: {x:100, y:0},
         };
-
-        this.uniqueId = this.uniqueId.bind(this);
         this.logSubmit = this.logSubmit.bind(this);
+        this.keyPress = this.keyPress.bind(this);
+        this.display = this.display.bind(this);
 
     }
     update(property) {
-        return e => this.setState({[property]: e.target.value});
+        return e => this.setState({[property]: e.target.value});    }
+
+
+    keyPress(e){
+        var code = e.keyCode || e.which;
+        if (code === 13){
+            this.logSubmit();
+        }
     }
 
-    uniqueId(){
-        return new Date().getTime();
-    }
-    logSubmit(event){
-        if (this.state.title === "" || this.state.body === ""){
-            alert("please dont leave the field blank");
+    logSubmit(){
+        if (this.state.body === ""){
+            alert("type in something");
             return 0;
         }
-        event.preventDefault();
-        const todo = Object.assign({}, this.state, {id: this.uniqueId() });
+        this.setState({color: randomColor({luminosity:"light",})});
+        const todo = Object.assign({}, this.state, {id: uuidv4()});
         this.props.receiveTodo(todo);
-        localStorage.setItem('todo', JSON.stringify(todo));
         this.setState({
-            title: "",
             body: ""
         });
+    }
+    display(){
+        if(!this.state.show){
+            this.setState({show: true});
+        }else{
+            this.setState({show: false});
+        }
     }
 
     render (){
         return (
-            <form onSubmit={this.logSubmit}>
-                <label>Title:
-                    <input onChange={this.update('title')} value={this.state.title} />
-                </label>
-                <br/>
-                <label>Body:
-                    <textarea onChange={this.update('body')} value={this.state.body}>
-                    </textarea>
-                </label>
-                <button type="submit">submit</button>
-            </form>
+            <div>
+                <button 
+                    id="button"
+                    onClick={this.display}
+                >+</button>
+                {this.state.show && 
+                (<div>
+                    <input 
+                        name="textarea"
+                        onChange={this.update('body')}
+                        value={this.state.body}
+                        placeholder="enter something..."
+                        onKeyPress={(e) => this.keyPress(e)}
+                    />
+                </div>)}
+                
+            </div>
         );
     }
 };
