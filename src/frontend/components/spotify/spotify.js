@@ -97,9 +97,9 @@ class Spotify extends Component {
         return (
         <div>
             <button
-                id="button"
+                id="spotify_button"
                 onClick={this.display}
-            >+S
+            >+<span id="spotify_span">S</span>
             </button>
             {this.state.show && (
                 <div className="Spotify">

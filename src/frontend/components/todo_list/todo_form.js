@@ -26,6 +26,7 @@ class TodoForm extends React.Component{
         if (code === 13){
             this.logSubmit();
         }
+        
     }
 
     logSubmit(){
@@ -52,18 +53,20 @@ class TodoForm extends React.Component{
         return (
             <div>
                 <button 
-                    id="button"
+                    id="todo_button"
                     onClick={this.display}
                 >+</button>
                 {this.state.show && 
-                (<div>
+                (<div class="div_effect">
                     <input 
-                        name="textarea"
+                        class="effect"
                         onChange={this.update('body')}
                         value={this.state.body}
                         placeholder="enter something..."
                         onKeyPress={(e) => this.keyPress(e)}
                     />
+                     <span class="focus-border"></span>
+                   
                 </div>)}
                 
             </div>

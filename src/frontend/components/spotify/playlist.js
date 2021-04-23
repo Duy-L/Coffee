@@ -5,8 +5,8 @@ class SpotifyPlaylist extends Component{
     render(){
         //spotify playlist
     const size = {
-        width: '20%',
-        height: 300,
+        width: '260px',
+        height: '320px',
     };
     const view = 'coverart'; // or 'coverart'
     const theme = 'black'; // or 'white'

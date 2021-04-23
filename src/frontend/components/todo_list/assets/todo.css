@@ -38,23 +38,23 @@
     background-color:green;
 } */
 
-#button {
+#todo_button {
     display:inline-block;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     padding: 0;
     border: none;
     background: none;
 
 }
-#button:focus{
+#todo_button:focus{
     outline: none;
 }
 #delete {
     font-size: 0.6em;
     position: fixed;
     top: 0;
-    right: 0;
+    right: 3%;
     background-color: transparent;
     border: none;
     outline:none;
@@ -63,4 +63,40 @@
 #delete:hover {
     color: rgb(255, 55, 55);
     outline:none;
+}
+
+.effect:focus{outline: none;}
+
+.div_effect{
+    float: center;
+    width: 18%; 
+    /* margin: 40px 3%;  */
+
+    position: relative;
+}
+.effect {
+    border:0;
+    padding: 5%; 
+    width: 110%;
+    border-bottom: 4px solid #ccc;
+}
+.effect ~ .focus-border{
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    width: 0; 
+    height: 4px; 
+    background-color: #85b6a0; 
+    transition: 0.4s;
+}
+.effect:focus ~ .focus-border{
+    width: 110%; 
+    transition: 0.4s; 
+    left: 0;
+}
+
+.effect::placeholder{
+    text-align: left;
+    font-style: italic;
+    font-size: 15px;
 }

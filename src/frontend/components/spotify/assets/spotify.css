@@ -82,3 +82,19 @@
   flex: 1;
 }
 
+#spotify_button {
+  display:inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0;
+  border: none;
+  background: none;
+
+}
+#spotify_button:focus{
+  outline: none;
+}
+
+#spotify_span{
+  font-size: 28px;
+}

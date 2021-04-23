@@ -7,7 +7,7 @@ class TodoListItem extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            defaultPos: {x:200, y:0},
+            defaultPos: {x:350, y:0},
         }
         this.todo = this.props.todo;
         this.toggle = this.toggle.bind(this);
