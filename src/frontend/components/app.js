@@ -16,29 +16,37 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.css';
+import placeholder from './app_assets/placeholder.jpg'
 
 const App = () => (
     <div className="main">
         <Header/>
+        <br/>
+        <br/>
+        <br/>
+        <TodoListContainer/>
         <Container fluid className={"no-gutters mx-0 px-0"}>
             <Row noGutters={true}>
-                <Col xs={"3"}>
+                <Col xs={6} md={3}>
                     <h1>Work in Progress...</h1>
-                    <TodoListContainer/>
                     <Spotify/>
-                    <SpotifyPlaylist/>
+                    <Container class="col_spotify">
+                        <SpotifyPlaylist/>
+                    </Container>
                 </Col>
-                <Col xs={"7"}>
-                    <p>heheheh</p>
+                <Col xs={"auto"} md={7}>
+                    <img src={placeholder} class="images"></img>
                 </Col>
-                <Col xs={"2"}>
-                    <Audio file={preparing} name={"Preparing Drinks"}/>
-                    <Audio file={cup} name={"Coffee Cups"}/>
-                    <Audio file={friend} name={"Plus one"}/>
-                    <Audio file={expresso} name={"Machinery"}/>
-                    <Audio file={rainy} name={"Rainy Day"}/>
-                    <Audio file={busy} name={"Sunny Day"}/>
-                    <Audio file={patio} name={"Outside Patio"}/>
+                <Col xs={6} md={2}>
+                    <div class="d-flex flex-column flex-nowrap">
+                        <Audio file={preparing} name={"Preparing Drinks"}/>
+                        <Audio file={cup} name={"Coffee Cups"}/>
+                        <Audio file={friend} name={"Plus one"}/>
+                        <Audio file={expresso} name={"Machinery"}/>
+                        <Audio file={rainy} name={"Rainy Day"}/>
+                        <Audio file={busy} name={"Sunny Day"}/>
+                        <Audio file={patio} name={"Outside Patio"}/>
+                    </div>
                 </Col>
             </Row>
         </Container>

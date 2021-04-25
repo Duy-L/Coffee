@@ -98,3 +98,7 @@
 #spotify_span{
   font-size: 28px;
 }
+
+.SpotifyPlayer{
+  min-width: 260px;
+}

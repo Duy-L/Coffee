@@ -1,8 +1,7 @@
 #volume {
     -webkit-appearance: none;
-    position: flex;
-    padding-right: ;
-    width: 250px;
+    position: relative;
+    width: 230px;
     height: 3px;
     border-radius: 5px;  
     background: darkgrey;
@@ -43,4 +42,6 @@
 
 .audio_div{
   padding-bottom: 8%;
+  min-width: 100%;
+  position:relative;
 }

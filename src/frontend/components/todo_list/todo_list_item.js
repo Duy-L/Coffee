@@ -47,12 +47,10 @@ class TodoListItem extends React.Component{
         return(
             <Draggable
                 key={todo.id}
-                // defaultPosition={this.state.defaultPos}
                 defaultPosition = {this.defaultPos()}
                 onStop={(e, data) => {
                     this.updatePos(data);
-                }}
-            >
+                }}>
                 <div style={{backgroundColor: todo.color}} className="box">
                     {todo.body}
                     <button id="delete" onClick={this.remove}>X</button>

@@ -4,9 +4,9 @@ import configureStore from './store/store.js';
 import Root from './components/root.js';
 
 const Fill = () => {
-  return ( <div>
+  return ( 
     <Root store ={configureStore}/>
-  </div>)
+  )
 };
 // const root = document.getElementById('content');
 

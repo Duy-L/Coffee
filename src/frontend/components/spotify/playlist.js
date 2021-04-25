@@ -12,6 +12,7 @@ class SpotifyPlaylist extends Component{
     const theme = 'black'; // or 'white'
         return (
             <SpotifyPlayer
+                class="spotify_player"
                 uri="spotify:playlist:7DwVLvkVLCdaGooIZmTcxr"
                 size={size}
                 view={view}

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, {Component} from 'react';
 import { faPlay, faPause, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 import './assets/audio.css';
-
+import 'bootstrap/dist/css/bootstrap.css';
 class Audio extends Component{
     constructor (props){
         super();
@@ -35,27 +35,29 @@ class Audio extends Component{
 
     render(){
         return (
-            <div class="audio_div">
-                <audio id="mp3" ref={this.audio} >
-                    <source src={this.props.file} type="audio/mp3"/>
-                </audio>
-                {this.state.currState === 0 &&(
-                    <div>
-                        <span>{this.props.name} </span>
-                        <button id="play-icon" onClick={this.playSound}>
-                            <FontAwesomeIcon icon={faPlay} size="xs" fixedWidth/>
-                        </button>
-                    </div>
-                )}
-                {this.state.currState === 1 &&(
-                     <div>
-                        <span>{this.props.name} </span>
-                        <button id="play-icon" onClick={this.pauseSound}>
-                            <FontAwesomeIcon icon={faPause} size="xs" fixedWidth/>
-                        </button>
-                    </div>
-                )}
-                <div class="slider_div">
+            <div>
+                <div class="d-inline-flex p-2 flex-nowrap">
+                    <audio id="mp3" ref={this.audio} >
+                        <source src={this.props.file} type="audio/mp3"/>
+                    </audio>
+                    {this.state.currState === 0 &&(
+                        <div>
+                            <span>{this.props.name} </span>
+                            <button id="play-icon" onClick={this.playSound}>
+                                <FontAwesomeIcon icon={faPlay} size="xs" fixedWidth/>
+                            </button>
+                        </div>
+                    )}
+                    {this.state.currState === 1 &&(
+                        <div>
+                            <span>{this.props.name} </span>
+                            <button id="play-icon" onClick={this.pauseSound}>
+                                <FontAwesomeIcon icon={faPause} size="xs" fixedWidth/>
+                            </button>
+                        </div>
+                    )}
+                </div>
+                <div class="d-flex p-2">
                     <FontAwesomeIcon icon={faVolumeUp} size="md" fixedWidth/>
                     <input id ="volume"
                         type="range"
@@ -67,8 +69,6 @@ class Audio extends Component{
                         }}
                     />
                 </div>
-               
-
             </div>
         )
     }

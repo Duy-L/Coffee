@@ -6,15 +6,28 @@
     /* Firefox, other Gecko */
     box-sizing: border-box;
     /* Opera/IE 8+ */
-    margin: 0;
-    padding: 0;
 }
 
 .main{
-    margin: 4%;
-
+    margin: 4%; 
 }
 
-.Container{
-    max-width: 100%;
+.col_audio{
+    padding-top: 8%;
+    overflow: visible;
+}
+
+.images {
+    max-width: 70%;
+    height: auto;
+    margin-left: 15%;    
+}
+
+.col_spotify{
+    position:absolute;
+    top: 550px;
+}
+
+.audio_container{
+    min-width: 100%;
 }
