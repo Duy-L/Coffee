@@ -34,9 +34,9 @@ class Audio extends Component{
     }
     render(){
         return (
-            <div>
+            <div class="audio_div">
                 <div class="d-flex p-2">
-                    <div class="audio_div">
+                    <div>
                         <audio ref={this.audio} >
                             <source src={this.props.file} type="audio/mp3"/>
                         </audio>

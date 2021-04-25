@@ -12,22 +12,35 @@
     margin: 4%; 
 }
 
-.col_audio{
-    padding-top: 8%;
-    overflow: visible;
-}
-
 .images {
     max-width: 70%;
     height: auto;
-    margin-left: 15%;    
+    margin-left: 10%; 
 }
 
-.col_spotify{
-    position:absolute;
-    top: 550px;
-}
 
 .audio_container{
-    min-width: 100%;
+    bottom: 0;
+    position: absolute;
+
+}
+
+.spott{
+    padding-right: 50px;
+    
+}   
+
+.h33{
+    text-overflow: none;
+    white-space: nowrap;
+}
+
+#first_col{
+height: 100%;
+}
+
+#quote{
+    font-size: 12px;
+    margin: 10px;
+    text-align: left;
 }

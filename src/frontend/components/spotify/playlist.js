@@ -1,5 +1,6 @@
 import SpotifyPlayer from 'react-spotify-player';
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 
 class SpotifyPlaylist extends Component{
     render(){

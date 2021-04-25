@@ -24,21 +24,30 @@ const App = () => (
         <br/>
         <br/>
         <br/>
-        <TodoListContainer/>
         <Container fluid className={"no-gutters mx-0 px-0"}>
             <Row noGutters={true}>
-                <Col xs={6} md={3}>
-                    <h1>Work in Progress...</h1>
-                    <Spotify/>
-                    <div class="d-flex flex-nowrap">
-                        <SpotifyPlaylist/>
+                <Col>
+                    <div id="first_col" class="d-flex align-items-start flex-column">
+                        <div class="d-flex p-2 flex-column">
+                            <h3 class="h33">Work in Progress...</h3>
+                            <TodoListContainer/>
+                            <Spotify/>
+                        </div>
+                        <div class="mt-auto d-flex p-2">
+                            <div id="spott" class="d-flex p-2 flex-column">
+                                <p id="quote">Take a seat and stay awhile.</p>
+                                <SpotifyPlaylist/>
+                            </div>
+                        </div>
                     </div>
                 </Col>
-                <Col xs={"auto"} md={7}>
-                    <img src={placeholder} class="images"></img>
+                <Col lg={6}>
+                    <div class="d-flex p-2 flexwrap">
+                        <img src={placeholder} class="images"></img>
+                    </div>
                 </Col>
-                <Col xs={6} md={2}>
-                    <div class="d-flex flex-column flex-nowrap">
+                <Col>
+                    <div id="first_col" class="d-flex flex-column">
                         <Audio file={preparing} name={"Preparing Drinks"}/>
                         <Audio file={cup} name={"Coffee Cups"}/>
                         <Audio file={friend} name={"Plus one"}/>
@@ -46,11 +55,34 @@ const App = () => (
                         <Audio file={rainy} name={"Rainy Day"}/>
                         <Audio file={busy} name={"Sunny Day"}/>
                         <Audio file={patio} name={"Outside Patio"}/>
-                    </div>
+                    </div>   
                 </Col>
             </Row>
+            {/* <Row noGutters={true}>
+                <Col sm={4} md={4}>
+                    <div id="spott" class="d-flex p-2 flex-column">
+                        <SpotifyPlaylist/>
+                    </div>
+                </Col> */}
+                {/* <Col>
+                    <p>5</p>
+                </Col>
+                <Col sm={3}>
+                    
+                </Col>      */}
+            {/* </Row> */}
+            {/* <Row noGutters={true}>
+                <Col>
+                    <p>7</p>
+                </Col>
+                <Col>
+                    <p>8</p>
+                </Col>
+                    <p>9</p>
+            </Row> */}
+            
         </Container>
-        
+
         
     </div>
 )

@@ -13,32 +13,6 @@
     overflow: hidden;
     z-index: 1;
 }
-/* .new-text {
-    user-select: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-/* #enter {
-    display:inline-block;
-    padding:0.35em 1.2em;
-    border:0.1em solid #FFFFFF;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-weight:300;
-    color:black;
-    text-align:center;
-    transition-duration: 0.4s;
-}
-
-#enter:hover{
-    color:white;
-    background-color:green;
-} */
 
 #todo_button {
     display:inline-block;
@@ -79,20 +53,20 @@
 .effect {
     border:0;
     padding: 5%; 
-    width: 110%;
+    width: 250px;
     border-bottom: 4px solid #ccc;
 }
 .effect ~ .focus-border{
     position: absolute; 
     bottom: 0; 
-    left: 50%; 
+    left: 120px; 
     width: 0; 
     height: 4px; 
     background-color: #85b6a0; 
     transition: 0.4s;
 }
 .effect:focus ~ .focus-border{
-    width: 110%; 
+    width: 250px; 
     transition: 0.4s; 
     left: 0;
 }
