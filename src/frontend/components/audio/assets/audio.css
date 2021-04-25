@@ -32,16 +32,25 @@
 }
 
 #play-icon {
-    /* position: absolute; */
+    position: relative;
     border:none;
     background: none;
     outline:none;
-    /* right: 104%;
-    min-height: 7.5%; */
+    right: 5px;
+    bottom: 1.4px;
 }
 
 .audio_div{
-  padding-bottom: 8%;
-  min-width: 100%;
-  position:relative;
+  padding-bottom: 2%;
+
+}
+
+#volume-icon{
+    position: relative;
+    right: 4px;
+    bottom: 5.5px;
+}
+
+#audio_name {
+    white-space: nowrap;
 }

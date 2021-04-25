@@ -30,9 +30,9 @@ const App = () => (
                 <Col xs={6} md={3}>
                     <h1>Work in Progress...</h1>
                     <Spotify/>
-                    <Container class="col_spotify">
+                    <div class="d-flex flex-nowrap">
                         <SpotifyPlaylist/>
-                    </Container>
+                    </div>
                 </Col>
                 <Col xs={"auto"} md={7}>
                     <img src={placeholder} class="images"></img>
