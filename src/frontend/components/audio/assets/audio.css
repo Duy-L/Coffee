@@ -9,7 +9,6 @@
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-
   }
   
 #volume::-webkit-slider-thumb {
@@ -41,6 +40,7 @@
 }
 
 .audio_div{
+    padding: 0;
 }
 
 #volume-icon{
