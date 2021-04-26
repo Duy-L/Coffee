@@ -8,7 +8,10 @@
     /* Opera/IE 8+ */
 }
 
-.main{
+html{}
+body {
+    min-height: 100%;
+    background-color: #e1dacb;
     margin: 4%; 
 }
 
@@ -43,4 +46,12 @@ height: 100%;
     font-size: 12px;
     margin: 10px;
     text-align: left;
+}
+
+#footer{
+    text-align: right;
+    bottom: 0;
+    padding-top: 110px;
+    font-size: 14px;
+    word-wrap: break-word;
 }

@@ -17,13 +17,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.css';
 import placeholder from './app_assets/placeholder.jpg'
-
+import Footer from './footer/footer.js';
 const App = () => (
-    <div className="main">
+    <div>
         <Header/>
-        <br/>
-        <br/>
-        <br/>
         <Container fluid className={"no-gutters mx-0 px-0"}>
             <Row noGutters={true}>
                 <Col>
@@ -58,31 +55,8 @@ const App = () => (
                     </div>   
                 </Col>
             </Row>
-            {/* <Row noGutters={true}>
-                <Col sm={4} md={4}>
-                    <div id="spott" class="d-flex p-2 flex-column">
-                        <SpotifyPlaylist/>
-                    </div>
-                </Col> */}
-                {/* <Col>
-                    <p>5</p>
-                </Col>
-                <Col sm={3}>
-                    
-                </Col>      */}
-            {/* </Row> */}
-            {/* <Row noGutters={true}>
-                <Col>
-                    <p>7</p>
-                </Col>
-                <Col>
-                    <p>8</p>
-                </Col>
-                    <p>9</p>
-            </Row> */}
-            
         </Container>
-
+        <Footer/>
         
     </div>
 )

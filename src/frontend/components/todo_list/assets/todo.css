@@ -3,7 +3,7 @@
     text-align: center;
     cursor: move;
     color: black;
-    background-color: white;
+    background-color:#e1dacb;
     max-width: 215px;
     overflow-wrap: break-word;
     border-radius: 5px;
@@ -46,8 +46,6 @@
 .div_effect{
     float: center;
     width: 18%; 
-    /* margin: 40px 3%;  */
-
     position: relative;
 }
 .effect {

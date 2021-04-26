@@ -1,18 +1,19 @@
-.nav{
-    display: flex;
+.nav-container{
+    /* display: flex;
     float: right;
+*/
 
 }
+
 .About,
 .Share {
     font-weight: bold;
-    display:inline-block;
     font-size: 15px;
     font-weight: bold;
     border: none;
     background: none;
-    padding-right: 25px;
     cursor:pointer;
+    margin-right: 20px;
 }
 
 .About:focus{
