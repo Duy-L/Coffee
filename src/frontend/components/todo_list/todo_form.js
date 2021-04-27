@@ -66,9 +66,7 @@ class TodoForm extends React.Component{
                         onKeyPress={(e) => this.keyPress(e)}
                     />
                      <span class="focus-border"></span>
-                   
                 </div>)}
-                
             </div>
         );
     }

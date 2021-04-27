@@ -20,7 +20,7 @@ import placeholder from './app_assets/placeholder.jpg'
 import Footer from './footer/footer.js';
 import Image from 'react-bootstrap/Image'
 const App = () => (
-    <div>
+    <div id="cloud-container">
         <Header/>
         <Container fluid className={"no-gutters mx-0 px-0"}>
             <Row noGutters={true}>

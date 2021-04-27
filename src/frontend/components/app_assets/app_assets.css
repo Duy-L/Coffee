@@ -1,19 +1,25 @@
 *{
-    background-color: #e1dacb;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
     box-sizing: border-box;
     /* Opera/IE 8+ */
+    margin: 0;
 }
 
-html{}
+html{
+ 
+}
 body {
-    min-height: 100%;
     background-color: #e1dacb;
     margin: 4%; 
     margin-right: 50px;
+    height: 100%;
+}
+
+#cloud-container{
+
 }
 
 .images {
@@ -55,7 +61,7 @@ body {
 
 #footer{
     text-align: right;
-    bottom: 0;
+    bottom: 0%;
     padding-top: 55px;
     font-size: 14px;
     word-wrap: break-word;

@@ -1,19 +1,35 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import './assets/header.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import Modal from './modal_about.js';
+import ModalC from './modal.js';
+import ModalH from './share_modal.js';
 
 class Header extends React.Component{
     constructor(props){
         super();
         this.state = {
-            show: false
+            modalShow: false,
+            setModalShow: false,
+            shareShow: false,
+            setShareShow: false,
         };
-        this.show = this.show.bind(this)
+        this.show_about = this.show_about.bind(this);
+        this.close_about = this.close_about.bind(this);
+        this.show_share = this.show_share.bind(this);
+        this.close_share = this.close_share.bind(this);
     }
-    show = e => {
-        this.setState({show: !this.state.show});
+
+    show_share = () => {
+        this.setState({setShareShow: true});
+    }
+    show_about = () => {
+        this.setState({setModalShow: true});
+    };
+    close_share = () =>{
+        this.setState({setShareShow: false});
+    }
+    close_about = () => {
+        this.setState({setModalShow: false});
     };
 
     render(){
@@ -21,24 +37,24 @@ class Header extends React.Component{
             <div class="nav-container">
                 <Nav  className="justify-content-end">
                     <Nav.Item>
-                        <button onClick={e => {this.show(e);}} class="About">ABOUT</button>
-                        <Modal onClose={this.show} show={this.state.show}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-                        deserunt corrupti, ut fugit magni qui quasi nisi amet repellendus non
-                        fuga omnis a sed impedit explicabo accusantium nihil doloremque
-                        consequuntur.
-                         </Modal>
+                        <button onClick={() => {this.show_about()}} class="About">ABOUT</button>
+                        <ModalC
+                            show={this.state.setModalShow}
+                            onHide={()=> this.close_about()}
+                        />     
                     </Nav.Item>
                     <Nav.Item>
-                        <button class="Share">SHARE</button>
+                        <button onClick={()=> {this.show_share()}} class="Share">SHARE</button>
+                        <ModalH
+                            show={this.state.setShareShow}
+                            onHide={()=> this.close_share()}
+                        />
                     </Nav.Item>  
                 </Nav>
                 <br/>
                 <br/>
-             
             </div>
         );
     }
 }
-
 export default Header;
