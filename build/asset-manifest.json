@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Coffee/static/css/main.d43c2caf.chunk.css",
+    "main.js": "/Coffee/static/js/main.7babc575.chunk.js",
+    "main.js.map": "/Coffee/static/js/main.7babc575.chunk.js.map",
+    "runtime-main.js": "/Coffee/static/js/runtime-main.33de550e.js",
+    "runtime-main.js.map": "/Coffee/static/js/runtime-main.33de550e.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/Coffee/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.711af216.chunk.js": "/Coffee/static/js/2.711af216.chunk.js",
+    "static/js/2.711af216.chunk.js.map": "/Coffee/static/js/2.711af216.chunk.js.map",
+    "index.html": "/Coffee/index.html",
+    "static/css/2.ef9168ec.chunk.css.map": "/Coffee/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.d43c2caf.chunk.css.map": "/Coffee/static/css/main.d43c2caf.chunk.css.map",
+    "static/js/2.711af216.chunk.js.LICENSE.txt": "/Coffee/static/js/2.711af216.chunk.js.LICENSE.txt",
+    "static/media/busy_night.0b1ec3eb.mp3": "/Coffee/static/media/busy_night.0b1ec3eb.mp3",
+    "static/media/coffee_cups.55ae4abf.mp3": "/Coffee/static/media/coffee_cups.55ae4abf.mp3",
+    "static/media/expresso_machine.3495b534.mp3": "/Coffee/static/media/expresso_machine.3495b534.mp3",
+    "static/media/patio_day.2f027eac.mp3": "/Coffee/static/media/patio_day.2f027eac.mp3",
+    "static/media/placeholder.18d6445f.jpg": "/Coffee/static/media/placeholder.18d6445f.jpg",
+    "static/media/plus_one.1e56eca4.mp3": "/Coffee/static/media/plus_one.1e56eca4.mp3",
+    "static/media/preparing_drinks.c9fc9050.mp3": "/Coffee/static/media/preparing_drinks.c9fc9050.mp3",
+    "static/media/rainy_day.470d92dc.mp3": "/Coffee/static/media/rainy_day.470d92dc.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33de550e.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.711af216.chunk.js",
+    "static/css/main.d43c2caf.chunk.css",
+    "static/js/main.7babc575.chunk.js"
+  ]
+}

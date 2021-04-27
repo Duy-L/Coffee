@@ -26,7 +26,7 @@ function ModalH (props){
         >
             <Modal.Header closedButton>
                 <Modal.Body>
-                    <p id="modal_title">thank you C: </p>
+                    <p id="modal_title">pls share C: </p>
                         <span id="modal_share">
                             <FacebookShareButton url={shareUrl}>
                                 <FacebookIcon size={40} />
