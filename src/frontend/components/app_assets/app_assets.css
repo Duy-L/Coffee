@@ -23,9 +23,11 @@ body {
 }
 
 .images {
-    max-width: 80%;
+    max-width: 750px;
+    max-height: 750px;
     height: auto;
-    margin-left: 5%; 
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -49,7 +51,7 @@ body {
 }
 
 #last_col{
-    margin-top: 55px;
+
     align-items: center;
 }
 

@@ -40,7 +40,7 @@ const App = () => (
                         </div>
                     </div>
                 </Col>
-                <Col sm={6} md={6}>
+                <Col sm={8} md={6}>
                     <div class="d-flex p-2">
                         {/* <img src={placeholder} class="images"></img> */}
                         <img 
