@@ -13,7 +13,7 @@ import {
     FacebookMessengerShareButton, FacebookMessengerIcon
 } from "react-share";
 
-const shareUrl = 'http://localhost:3000/';
+const shareUrl = 'https://duy-l.github.io/Coffee/';
 
 function ModalH (props){
     

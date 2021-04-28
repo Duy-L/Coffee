@@ -20,51 +20,83 @@ import placeholder from './app_assets/placeholder.jpg'
 import Footer from './footer/footer.js';
 import Image from 'react-bootstrap/Image'
 const App = () => (
-    <div id="cloud-container">
-        <Header/>
-        <Container fluid className={"no-gutters mx-0 px-0"}>
-            <Row noGutters={true}>
-                <Col xs={{order: 'first'}}>
-                    <div id="first_col" class="d-flex align-items-start flex-column">
-                        <div class="d-flex p-2 flex-column">
-                            <h3 class="h33">Work in Progress...</h3>
-                            <TodoListContainer/>
-                            <Spotify/>
-                        </div>
-                        <div class="mt-auto d-flex p-2">
-                            <div id="spott" class="d-flex p-2 flex-column">
+    // <div id="cloud-container">
+    //     <Header/>
+    //     <Container fluid className={"no-gutters mx-0 px-0"}>
+    //         <Row noGutters={true}>
+    //             <Col xs={{order: 'first'}}>
+    //                 <div id="first_col" class="d-flex align-items-start flex-column">
+    //                     <div class="d-flex p-2 flex-column">
+    //                         <h3 class="h33">Work in Progress...</h3>
+    //                         <TodoListContainer/>
+    //                         <Spotify/>
+    //                     </div>
+    //                     <div class="mt-auto d-flex p-2">
+    //                         <div id="spott" class="d-flex p-2 flex-column">
 
-                                <p id="quote">This Week's Playlist</p>
-                                <SpotifyPlaylist/>
-                            </div>
-                        </div>
-                    </div>
-                </Col>
-                <Col sm={8} md={6}>
-                    <div class="d-flex p-2">
-                        {/* <img src={placeholder} class="images"></img> */}
-                        <img 
-                            src="http://www.joerperez.com/wordpress/wp-content/uploads/2015/09/808s_POSTER_4.jpg" 
-                            class="images">
-                        </img>
-                    </div>
-                </Col>
-                <Col xs={{order: 'last'}}>
-                    <div id="last_col" class="d-flex p-2">
-                        <div class="d-flex p-2 flex-column">
-                            <Audio file={preparing} name={"Preparing Drinks"}/>
-                            <Audio file={cup} name={"Coffee Cups"}/>
-                            <Audio file={friend} name={"Plus one"}/>
-                            <Audio file={expresso} name={"Machinery"}/>
-                            <Audio file={rainy} name={"Rainy Day"}/>
-                            <Audio file={busy} name={"Sunny Day"}/>
-                            <Audio file={patio} name={"Outside Patio"}/>
-                        </div>
-                    </div>   
-                </Col>
-            </Row>
-        </Container>
-        <Footer/>  
+    //                             <p id="quote">This Week's Playlist</p>
+    //                             <SpotifyPlaylist/>
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //             </Col>
+    //             <Col  md={6}>
+    //                 <div class="d-flex p-2">
+    //                      {/* <img src={placeholder} class="images"></img> */}
+    //                      <img 
+    //                         src="http://www.joerperez.com/wordpress/wp-content/uploads/2015/09/808s_POSTER_4.jpg" 
+    //                         class="images">
+    //                     </img>
+    //                 </div>
+    //             </Col>
+    //             <Col xs={{order: 'last'}}>
+    //                 <div id="last_col" class="d-flex p-2">
+    //                     <div class="d-flex p-2 flex-column">
+    //                         <Audio file={preparing} name={"Preparing Drinks"}/>
+    //                         <Audio file={cup} name={"Coffee Cups"}/>
+    //                         <Audio file={friend} name={"Plus one"}/>
+    //                         <Audio file={expresso} name={"Machinery"}/>
+    //                         <Audio file={rainy} name={"Rainy Day"}/>
+    //                         <Audio file={busy} name={"Sunny Day"}/>
+    //                         <Audio file={patio} name={"Outside Patio"}/>
+    //                     </div>
+    //                 </div>   
+    //             </Col>
+    //         </Row>
+    //     </Container>
+    //     <Footer/>   
+    // </div> 
+    <div class="grid-container">
+        <div class="header">
+            <Header/>
+        </div>
+        <div class="first_col1">
+            <h3 class="h33">Work in Progress...</h3>
+            <TodoListContainer/>
+            <Spotify/>
+        </div>
+        <div class="first_col2">
+            <SpotifyPlaylist/>
+        </div>
+        <div class="last_col">
+                <Audio file={preparing} name={"Preparing Drinks"}/>
+                <Audio file={cup} name={"Coffee Cups"}/>
+                <Audio file={friend} name={"Plus one"}/>
+                <Audio file={expresso} name={"Machinery"}/>
+                <Audio file={rainy} name={"Rainy Day"}/>
+                <Audio file={busy} name={"Sunny Day"}/>
+                <Audio file={patio} name={"Outside Patio"}/>
+        </div>
+        <div class="footer">
+            <Footer/>
+        </div>
+        <div class="mid_col">
+            <img 
+                src="http://www.joerperez.com/wordpress/wp-content/uploads/2015/09/808s_POSTER_4.jpg" 
+                class="images"
+            >
+            </img>
+        </div>
     </div>
 )
 
