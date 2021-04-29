@@ -73,7 +73,7 @@ const App = () => (
         <div class="first_col1">
             <h3 class="h33">Work in Progress...</h3>
             <TodoListContainer/>
-            <Spotify/>
+            {/* <Spotify/> */}
         </div>
         <div class="first_col2">
             <SpotifyPlaylist/>
@@ -91,11 +91,13 @@ const App = () => (
             <Footer/>
         </div>
         <div class="mid_col">
-            <img 
-                src="http://www.joerperez.com/wordpress/wp-content/uploads/2015/09/808s_POSTER_4.jpg" 
-                class="images"
-            >
-            </img>
+            <div class="image_div">
+                <img 
+                    src="http://www.joerperez.com/wordpress/wp-content/uploads/2015/09/808s_POSTER_4.jpg" 
+                    class="images"
+                >
+                </img>
+            </div>
         </div>
     </div>
 )
