@@ -153,7 +153,9 @@ body {
         margin-left: 25%;
         margin-top: -40px;
     }
-
+    #modal_share{
+        padding: 9px;
+    }
     #footer{
         text-align: right;
         bottom: 0%;

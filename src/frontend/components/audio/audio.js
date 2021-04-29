@@ -30,6 +30,7 @@ class Audio extends Component{
     }
 
     componentDidMount(){
+        this.audio.current.load();
         this.audio.current.volume=".75";
     }
     render(){
@@ -37,8 +38,8 @@ class Audio extends Component{
             <div class="audio_div">
                 <div class="d-flex p-2">
                     <div>
-                        <audio ref={this.audio} >
-                            <source src={this.props.file} type="audio/mp3"/>
+                        <audio ref={this.audio} preload="none">
+                            <source src={this.props.file} type="audio/mp4" type="audio/mp3"/>
                         </audio>
                         {this.state.currState === 0 &&(
                             <div>

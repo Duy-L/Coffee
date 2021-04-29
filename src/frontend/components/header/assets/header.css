@@ -38,8 +38,13 @@
 
 #modal_share{
     padding: 3.3px;
+
 }
 
 #modal_body{
     font-size: 25px;
+}
+
+.m_share{
+    align-items: center;
 }
