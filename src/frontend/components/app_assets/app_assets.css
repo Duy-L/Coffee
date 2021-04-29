@@ -47,8 +47,8 @@ body {
 
 #quote{
     font-size: 15px;
-    margin: 10px;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 #footer{

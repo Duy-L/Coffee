@@ -12,10 +12,6 @@ import friend from './audio/assets/sounds/plus_one.mp3';
 import patio from './audio/assets/sounds/patio_day.mp3';
 import Header from './header/header.js';
 import './app_assets/app_assets.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import 'bootstrap/dist/css/bootstrap.css';
 import placeholder from './app_assets/placeholder.jpg'
 import Footer from './footer/footer.js';
 import Image from 'react-bootstrap/Image'
@@ -30,6 +26,7 @@ const App = () => (
             {/* <Spotify/> */}
         </div>
         <div class="first_col2">
+            <p id="quote">This Week's Playlist</p>
             <SpotifyPlaylist/>
         </div>
         <div class="last_col">
