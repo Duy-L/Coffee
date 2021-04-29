@@ -127,6 +127,7 @@ body {
         grid-template-rows: 0.3fr 0.8fr 1.2fr 2fr 1.3fr 0.4fr;
         gap: 0px 0px;
         justify-items: center;
+        margin-left: 25px;
         padding: 0;
         /* margin-left: 12%; */
         grid-template-areas:
@@ -144,16 +145,16 @@ body {
         .first_col2 { grid-area: first_col2; }
         .footer { grid-area: footer; }
 
-      .images{
-          display: unset;
-          max-width: 50%;
-          min-width: 200px;
-          height: auto;
-          margin-left: 25%;
-          margin-top: -40px;
-      }
+    .images{
+        display: unset;
+        max-width: 50%;
+        min-width: 200px;
+        height: auto;
+        margin-left: 25%;
+        margin-top: -40px;
+    }
 
-      #footer{
+    #footer{
         text-align: right;
         bottom: 0%;
         padding-top: 35px;
