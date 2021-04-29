@@ -18,6 +18,7 @@ const stepsReducer = (oldState = newI, action) =>{
             newState = Object.assign({}, oldState);
             delete newState[action.step.id];
             return newState;
+        
         default:
             return oldState;
     }

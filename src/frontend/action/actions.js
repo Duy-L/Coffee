@@ -1,6 +1,7 @@
 export const RECEIVE_TODOS = "RECEIVE_TODOS";
 export const RECEIVE_TODO = "RECEIVE_TODO";
 export const REMOVE_TODO = "REMOVE_TODO";
+export const CLEAR_TODO = "CLEAR_TODO";
 
 export const receiveTodos = todos => {
     return {
@@ -23,7 +24,8 @@ export const removeTodo = todo => {
     };
 };
 
-
-window.removeTodo = removeTodo;
-window.receiveTodo = receiveTodo;
-window.receiveTodos = receiveTodos;
+export const clearTodo = () => {
+    return{
+        type: CLEAR_TODO,
+    };
+};

@@ -15,7 +15,6 @@ class TodoForm extends React.Component{
         this.logSubmit = this.logSubmit.bind(this);
         this.keyPress = this.keyPress.bind(this);
         this.display = this.display.bind(this);
-
     }
     update(property) {
         return e => this.setState({[property]: e.target.value});    }
@@ -66,7 +65,8 @@ class TodoForm extends React.Component{
                         onKeyPress={(e) => this.keyPress(e)}
                     />
                      <span class="focus-border"></span>
-                </div>)}
+                </div>
+                )}
             </div>
         );
     }

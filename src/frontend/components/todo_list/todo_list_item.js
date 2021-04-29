@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavItem } from 'react-bootstrap';
 import Draggable from 'react-draggable';
+import { clearTodo } from '../../action/actions';
 import "./assets/todo.css";
 
 class TodoListItem extends React.Component{
@@ -23,7 +24,7 @@ class TodoListItem extends React.Component{
         }
     }
     remove(){
-        this.props.removeTodo(this.props.todo);
+        this.props.removeTodo(this.props.todo);   
     }
     defaultPos(){
         let rState = localStorage.getItem(this.todo.id)
@@ -41,7 +42,6 @@ class TodoListItem extends React.Component{
         localStorage.setItem(this.todo.id, sState);
     }
 
-
     render(){
         const {todo} = this.props;
         return(
@@ -53,7 +53,11 @@ class TodoListItem extends React.Component{
                 }}>
                 <div style={{backgroundColor: todo.color}} className="box">
                     {todo.body}
-                    <button id="delete" onClick={this.remove}>X</button>
+                    <button
+                        id="delete" 
+                        onClick={this.remove}
+                        onTouchStart={this.remove}
+                    >X</button>
                 </div>
             </Draggable>
         )
