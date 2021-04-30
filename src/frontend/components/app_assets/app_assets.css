@@ -6,6 +6,7 @@
     box-sizing: border-box;
     /* Opera/IE 8+ */
     margin: 0;
+
 }
 
 html{
@@ -34,14 +35,12 @@ body {
 }
 
 .first_col2{
-    z-index: -1;
+
 }
 .mid_col{
     z-index: -1;
 }
-.footer{
-    z-index: -1;
-}
+
 .spott{
     padding-right: 50px;
 }   
