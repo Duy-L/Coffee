@@ -18,6 +18,7 @@ body {
     margin-right: 50px;
     height: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 
