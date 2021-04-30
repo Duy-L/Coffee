@@ -13,10 +13,9 @@ import {
     FacebookMessengerShareButton, FacebookMessengerIcon
 } from "react-share";
 
-const shareUrl = 'https://duy-l.github.io/Coffee/';
+const shareUrl = 'http://imissmyicedlatte.com/';
 
 function ModalH (props){
-    
     return(
         <Modal
             {...props}

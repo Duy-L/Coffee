@@ -45,6 +45,7 @@ class TodoListItem extends React.Component{
     render(){
         const {todo} = this.props;
         return(
+            
             <Draggable
                 key={todo.id}
                 defaultPosition = {this.defaultPos()}

@@ -16,6 +16,7 @@ body {
     margin: 4%; 
     margin-right: 50px;
     height: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -32,6 +33,15 @@ body {
 
 }
 
+.first_col2{
+    z-index: -1;
+}
+.mid_col{
+    z-index: -1;
+}
+.footer{
+    z-index: -1;
+}
 .spott{
     padding-right: 50px;
 }   

@@ -16,6 +16,8 @@ import placeholder from './app_assets/placeholder.jpg'
 import Footer from './footer/footer.js';
 import Image from 'react-bootstrap/Image';
 import Loader from './loader.js';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const App = () => {
     const [spinner, setSpinner] = useState(false);
@@ -29,18 +31,25 @@ const App = () => {
             {spinner && (loader.style.display = 'none') && (
                 <div class="grid-container">
                     <div class="header">
-                        <Header/>
+                        <Fade right>
+                            <Header/>
+                        </Fade>
                     </div>
                     <div class="first_col1">
-                        <h3 class="h33">Work in Progress...</h3>
-                        <TodoListContainer/>
-                        {/* <Spotify/> */}
+                        <Fade left>
+                            <h3 class="h33">Work in Progress...</h3>
+                            <TodoListContainer/>
+                            {/* <Spotify/> */}
+                        </Fade>
                     </div>
                     <div class="first_col2">
-                        <p id="quote">This Week's Playlist</p>
-                        <SpotifyPlaylist/>
+                        <Fade left>
+                            <p id="quote">This Week's Playlist</p>
+                            <SpotifyPlaylist/>
+                        </Fade>
                     </div>
                     <div class="last_col">
+                        <Fade right>
                             <Audio file={preparing} name={"Preparing Drinks"}/>
                             <Audio file={cup} name={"Coffee Cups"}/>
                             <Audio file={friend} name={"Plus one"}/>
@@ -48,18 +57,23 @@ const App = () => {
                             <Audio file={rainy} name={"Rainy Day"}/>
                             <Audio file={busy} name={"Sunny Day"}/>
                             <Audio file={patio} name={"Outside Patio"}/>
+                        </Fade>
                     </div>
                     <div class="footer">
-                        <Footer/>
+                        <Fade right>
+                            <Footer/>
+                        </Fade>
                     </div>
                     <div class="mid_col">
+                        <Zoom>
                         <div class="image_div">
                             <img 
                                 src="http://www.joerperez.com/wordpress/wp-content/uploads/2015/09/808s_POSTER_4.jpg" 
                                 class="images"
                             >
-                            </img>
+                            </img>  
                         </div>
+                        </Zoom>
                     </div>
                 </div>
             )}

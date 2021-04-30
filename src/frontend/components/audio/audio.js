@@ -14,7 +14,6 @@ class Audio extends Component{
         this.playSound = this.playSound.bind(this);
         this.pauseSound = this.pauseSound.bind(this);    
     }
-
     setVolume(myVolume){
         this.audio.current.volume = myVolume / 100;
     }
@@ -77,7 +76,6 @@ class Audio extends Component{
         )
     }
 }
-
 export default Audio;
 
 
