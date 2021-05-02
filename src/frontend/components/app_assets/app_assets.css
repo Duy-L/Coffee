@@ -9,14 +9,16 @@
 
 }
 
-html{
- 
-}
+html{}
+
 body {
     background-color: #e1dacb;
-    margin: 4%; 
-    margin-right: 50px;
-    height: 100%;
+    margin-left: 3.5%;
+    margin-right: 3%;
+    min-height: 100vh;
+    /* padding: 0px !important; */
+    /* margin: 0px !important; */
+    /* height: 100%; */
     overflow-x: hidden;
     overflow-y: scroll;
 }

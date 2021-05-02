@@ -35,12 +35,12 @@ class Header extends React.Component{
             <div class="nav-container">
                 <Nav  className="justify-content-end">
                     <Nav.Item>
-                        <motion.div
+                        {/* <motion.div
                             onClick={() => {this.show_about()}}
                             animate={{rotate: this.state.setModalShow ? 360 : 0,}}
                             class="About">ABOUT
-                        </motion.div>
-                        {/* <button onClick={() => {this.show_about()}} class="About">ABOUT</button> */}
+                        </motion.div> */}
+                        <button onClick={() => {this.show_about()}} class="About">ABOUT</button>
                         <ModalC
                             show={this.state.setModalShow}
                             onHide={()=> this.close_about()}
@@ -48,12 +48,12 @@ class Header extends React.Component{
                     </Nav.Item>
           
                     <Nav.Item>
-                        <motion.div
+                        {/* <motion.div
                                 onClick={() => {this.show_share()}}
                                 animate={{rotate: this.state.setShareShow ? 360 : 0,}}
                                 class="Share">SHARE
-                        </motion.div>
-                        {/* <button onClick={()=> {this.show_share()}} class="Share">SHARE</button> */}
+                        </motion.div> */}
+                        <button onClick={()=> {this.show_share()}} class="Share">SHARE</button>
                         <ModalH
                             show={this.state.setShareShow}
                             onHide={()=> this.close_share()}
