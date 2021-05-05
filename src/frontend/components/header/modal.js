@@ -8,16 +8,16 @@ import {motion} from "framer-motion";
 
 function ModalC (props){
     const title = "about";
-    const line1 = "This is a project that we've put together in order to scope with wfh during the pandemic.";
+    const line1 = "This is a project that we've put together in order to cope with WFH during the pandemic.";
     const line2 = "Inspired by IMissMyCafe and IMissMyBar.";
-    const line3 = "Thank you for stopping by!";
+    const line3 = "Thank you for stopping by~";
     const sentence = {
         hidden: { opacity: 1},
         visible: {
             opacity: 1,
             transition: {
                 delay: 0.4,
-                staggerChildren: 0.025,
+                staggerChildren: 0.03,
             },
         },
     }

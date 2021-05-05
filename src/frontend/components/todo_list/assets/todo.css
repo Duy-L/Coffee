@@ -14,12 +14,14 @@
 }
 
 #todo_button {
-    display:inline-block;
-    font-size: 25px;
+    display: fixed;
+    font-size: 45px;
     font-weight: bold;
     padding: 0;
+    margin-top: -30px;
     border: none;
     background: none;
+    color: 	#7A9083;
 
 }
 #todo_button:focus{
@@ -50,22 +52,22 @@
 
 .effect {
     border:0;
-    background-color: #e1dacb;
+    background-color: #E2DAC9;
     padding: 5%; 
-    width: 250px;
-    border-bottom: 4px solid #ccc;
+    width: 300px;
+    border-bottom: 3px solid #ccc;
 }
 .effect ~ .focus-border{
     position: absolute; 
     bottom: 0; 
     left: 120px; 
     width: 0; 
-    height: 4px; 
-    background-color: #85b6a0; 
+    height: 3px; 
+    background-color: #7A9083; 
     transition: 0.4s;
 }
 .effect:focus ~ .focus-border{
-    width: 250px; 
+    width: 300px; 
     transition: 0.4s; 
     left: 0;
 }

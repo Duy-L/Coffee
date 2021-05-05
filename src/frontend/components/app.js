@@ -38,7 +38,7 @@ const App = () => {
                     </div>
                     <div class="first_col1">
                         <Fade left>
-                            <h2>I Miss My Iced Latte</h2>
+                            <h1>I Miss My Iced Latte</h1>
                             <TodoListContainer/>
                             {/* <Spotify/> */}
                         </Fade>
