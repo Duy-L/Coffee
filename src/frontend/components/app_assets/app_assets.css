@@ -183,7 +183,6 @@ h2{
             grid-template-rows: 0.3fr 0.8fr 1.2fr 2fr 1.3fr 0.4fr;
             gap: 0px 0px;
             justify-items: center;
-            
             padding: 0;
             grid-template-areas:
                 "header"
@@ -199,17 +198,18 @@ h2{
             .last_col { grid-area: last_col; }
             .first_col2 { grid-area: first_col2; }
             .footer { grid-area: footer; }
-    
+
         .images{
-            display: unset;
-            max-width: 50%;
+            display: block;
+            max-width: 40%;
             min-width: 270px;
             height: auto;
-            transform: scale(1.6);
+            transform: scale(1.9);
+            padding-right: 40px;
         }
         .mid_col{
-            margin-right: 150px;
-            margin-top: -30px;
+            margin-right: 90px;
+            margin-top: -15px;
         }
         #modal_share{
             padding: 1%;
@@ -224,15 +224,15 @@ h2{
         }
     
         .first_col2{
-            margin-top: -3px;
+            margin-top: -6px;
         }
     
         .last_col{
-            margin-top: -50px;
+            margin-top: -55px;
         }
         
         .header{
-            margin-left: 59%;
+            margin-left: 60%;
         }
     
     }
