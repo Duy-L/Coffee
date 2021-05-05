@@ -21,46 +21,47 @@ body {
     /* height: 100%; */
     overflow-x: hidden;
     overflow-y: scroll;
+    font-family: 'Cabin Sketch', cursive;
 }
 
 
 .images {
-    max-width: 70%;
-    max-height: auto;
-    min-width: 620px;
-    object-fit: cover;
-}
-
-.audio_container{
-    bottom: 0;
-    position: absolute;
-
-}
-
-.first_col2{
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
 
 }
 .mid_col{
     z-index: -1;
+    margin-top: 70px;
+    margin-right: 150px;
+}
+.audio_container{
+    bottom: 0;
+    position: absolute;
+}
+
+.first_col2{
 }
 
 .spott{
     padding-right: 50px;
 }   
 
-.h33{
+h2{
     text-overflow: none;
     white-space: nowrap;
 }
 
-#last_col{
-    align-items: center;
+.last_col{
+    margin-top: 25px;;
 }
 
 #quote{
-    font-size: 15px;
     text-align: left;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 #footer{
@@ -146,19 +147,17 @@ body {
     .mid_col { grid-area: mid_col; }
 
 @media (max-width: 1280px){
-    body{
-        margin-right: 10px;
-    }
+
     .grid-container {
         display: grid;
         grid-template-columns: 0.9fr 1.1fr 1.2fr 0.8fr;
         grid-template-rows: 0.4fr repeat(2, 1.6fr) 0.4fr;
         gap: 0px 0px;
         grid-template-areas:
-          "header header header header"
-          "first_col1 mid_col mid_col last_col"
-          "first_col2 mid_col mid_col last_col"
-          "footer footer footer footer";
+            "header header header header"
+            "first_col1 mid_col mid_col last_col"
+            "first_col2 mid_col mid_col last_col"
+            "footer footer footer footer";
         }
     
         .header { grid-area: header; }
@@ -172,120 +171,69 @@ body {
         .last_col { grid-area: last_col; }
     
         .mid_col { grid-area: mid_col; }
-   
+    
     .images{
         display:none;
     }
 }
-@media (max-width: 980px){
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 0.8fr 1.2fr 2fr 1.3fr 0.4fr;
-        gap: 0px 0px;
-        justify-items: center;
+    @media (max-width: 980px){
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.3fr 0.8fr 1.2fr 2fr 1.3fr 0.4fr;
+            gap: 0px 0px;
+            justify-items: center;
+            
+            padding: 0;
+            grid-template-areas:
+                "header"
+                "first_col1"
+                "mid_col"
+                "last_col"
+                "first_col2"
+                "footer";
+          }
+            .header { grid-area: header; }
+            .first_col1 { grid-area: first_col1; }
+            .mid_col { grid-area: mid_col; }
+            .last_col { grid-area: last_col; }
+            .first_col2 { grid-area: first_col2; }
+            .footer { grid-area: footer; }
+    
+        .images{
+            display: unset;
+            max-width: 50%;
+            min-width: 270px;
+            height: auto;
+            transform: scale(1.6);
+        }
+        .mid_col{
+            margin-right: 150px;
+            margin-top: -30px;
+        }
+        #modal_share{
+            padding: 1%;
+        }
+        #footer{
+            text-align: right;
+            bottom: 0%;
+            padding-top: 35px;
+            font-size: 14px;
+            word-wrap: break-word;
+            text-decoration: none;
+        }
+    
+        .first_col2{
+            margin-top: -3px;
+        }
+    
+        .last_col{
+            margin-top: -50px;
+        }
         
-        padding: 0;
-        /* margin-left: 12%; */
-        grid-template-areas:
-            "header"
-            "first_col1"
-            "first_col2"
-            "last_col"
-            "mid_col"
-            "footer";
-      }
-        .header { grid-area: header; }
-        .first_col1 { grid-area: first_col1; }
-        .mid_col { grid-area: mid_col; }
-        .last_col { grid-area: last_col; }
-        .first_col2 { grid-area: first_col2; }
-        .footer { grid-area: footer; }
-
-    .images{
-        display: unset;
-        max-width: 50%;
-        min-width: 200px;
-        height: auto;
-        margin-left: 25%;
-        margin-top: -40px;
-    }
-    #modal_share{
-        padding: 1%;
-    }
-    #footer{
-        text-align: right;
-        bottom: 0%;
-        padding-top: 35px;
-        font-size: 14px;
-        word-wrap: break-word;
-        text-decoration: none;
-    }
-
-    .first_col2{
-        margin-top: -10%;
-    }
-
-    .last_col{
-        margin-top: -3%;
+        .header{
+            margin-left: 59%;
+        }
+    
     }
     
-    .header{
-        margin-left: 59%;
-    }
-
-}
-
-@media (max-width: 940px){
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 0.8fr 1.2fr 2fr 1.3fr 0.4fr;
-        gap: 0px 0px;
-        justify-items: center;
-        padding: 0;
-        /* margin-left: 12%; */
-        grid-template-areas:
-            "header"
-            "first_col1"
-            "first_col2"
-            "last_col"
-            "mid_col"
-            "footer";
-      }
-        .header { grid-area: header; }
-        .first_col1 { grid-area: first_col1; }
-        .mid_col { grid-area: mid_col; }
-        .last_col { grid-area: last_col; }
-        .first_col2 { grid-area: first_col2; }
-        .footer { grid-area: footer; }
-
-    .images{
-        display: unset;
-        max-width: 50%;
-        min-width: 200px;
-        height: auto;
-        margin-top: 10px;
-    }
- 
-  
-    #footer{
-        text-align: right;
-        bottom: 0%;
-        padding-top: 35px;
-        font-size: 14px;
-        word-wrap: break-word;
-        text-decoration: none;
-    }
-    .first_col2{
-        margin-top: -12.5%;
-    }
-
-    .last_col{
-        margin-top: -3%;
-    }
-    
-    .header{
-        margin-left: 59%;
-    }
-}

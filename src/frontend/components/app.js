@@ -12,7 +12,8 @@ import friend from './audio/assets/sounds/plus_one.mp3';
 import patio from './audio/assets/sounds/patio_day.mp3';
 import Header from './header/header.js';
 import './app_assets/app_assets.css';
-import placeholder from './app_assets/placeholder.jpg'
+import placeholder from './app_assets/placeholder.jpg';
+import main from './app_assets/main.svg';
 import Footer from './footer/footer.js';
 import Image from 'react-bootstrap/Image';
 import Loader from './loader.js';
@@ -37,14 +38,14 @@ const App = () => {
                     </div>
                     <div class="first_col1">
                         <Fade left>
-                            <h3 class="h33">Work in Progress...</h3>
+                            <h2>I Miss My Iced Latte</h2>
                             <TodoListContainer/>
                             {/* <Spotify/> */}
                         </Fade>
                     </div>
                     <div class="first_col2">
                         <Fade left>
-                            <p id="quote">This Week's Playlist</p>
+                            <h5><p id="quote">This Week's Playlist</p></h5>
                             <SpotifyPlaylist/>
                         </Fade>
                     </div>
@@ -66,13 +67,15 @@ const App = () => {
                     </div>
                     <div class="mid_col">
                         <Zoom>
+                            <center>
                         <div class="image_div">
                             <img 
-                                src="http://www.joerperez.com/wordpress/wp-content/uploads/2015/09/808s_POSTER_4.jpg" 
+                                src={main}
                                 class="images"
                             >
                             </img>  
                         </div>
+                            </center>
                         </Zoom>
                     </div>
                 </div>
