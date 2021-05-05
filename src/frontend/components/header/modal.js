@@ -8,8 +8,8 @@ import {motion} from "framer-motion";
 
 function ModalC (props){
     const title = "about";
-    const line1 = "This is a project that we've put together in order to cope with WFH during the pandemic.";
-    const line2 = "Inspired by IMissMyCafe and IMissMyBar.";
+    const line1 = "This is a little project that we've put together in order to cope with WFH during the pandemic.";
+    const line2 = "The audio sounds are sourced from various Youtube ASMR vids. Inspired by IMissMyCafe and IMissMyBar.";
     const line3 = "Thank you for stopping by~";
     const sentence = {
         hidden: { opacity: 1},
